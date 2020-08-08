@@ -3,15 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://rcammi.github.io/cammirenzo_portfolio/post/project-1/</loc>
-    <lastmod>2020-08-04T00:00:00+00:00</lastmod>
+    <loc>https://rcammi.github.io/cammirenzo_portfolio/post/project-4/</loc>
+    <lastmod>2020-08-07T11:00:59-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://rcammi.github.io/cammirenzo_portfolio/</loc>
-    <lastmod>2020-08-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-07T11:00:59-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rcammi.github.io/cammirenzo_portfolio/post/project-3/</loc>
+    <lastmod>2020-08-02T11:00:59-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rcammi.github.io/cammirenzo_portfolio/post/project-2/</loc>
+    <lastmod>2020-07-24T11:00:59-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rcammi.github.io/cammirenzo_portfolio/post/project-1/</loc>
+    <lastmod>2020-07-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -19,20 +40,6 @@
   <url>
     <loc>https://rcammi.github.io/cammirenzo_portfolio/post/</loc>
     <lastmod>2020-04-08T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rcammi.github.io/cammirenzo_portfolio/post/project-2/</loc>
-    <lastmod>2017-04-10T11:00:59-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rcammi.github.io/cammirenzo_portfolio/post/project-3/</loc>
-    <lastmod>2017-04-10T11:00:59-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
