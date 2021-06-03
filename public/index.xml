@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Projects on Renzo Cammi</title>
+    <link>https://rcammi.github.io/cammirenzo_portfolio/</link>
+    <description>Recent content in My Projects on Renzo Cammi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://rcammi.github.io/cammirenzo_portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Players Scouting Tool</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project-5/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project-5/</guid>
+      <description>Scouting Tool is an application that lets you search, find, and analyze football players within the Top 5 European Leagues. The application is built with the python library “Streamlit”. The open data is scraped from Statsbomb via FBref for the season 2017-18 to current. Based on the selected season the app loads and processes the data from the webpage. The numbers are adjusted per 90 minutes and for the moment defensive metrics are not adjusted by the possession of the squad.</description>
+    </item>
+    
+    <item>
+      <title>Champions League squad pressures in season 2019/20</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project-4/</link>
+      <pubDate>Fri, 07 Aug 2020 11:00:59 -0400</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project-4/</guid>
+      <description>How champions league (season 2019/20) qualified squads like to pressure in three different zones of the pitch. The dataset was scraped from FBref.
+FBref describes pressures as “number of times applying pressure to opposing player who is receiving, carrying or releasing the ball in 1/3 of the pitch”. Dividing each value by the total number of pressures made, we calculate the percentage applied in each third of the field.
+  Link to Github Repository</description>
+    </item>
+    
+    <item>
+      <title>Top 10 defensive players of Superliga in season 2019/20</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project-3/</link>
+      <pubDate>Sun, 02 Aug 2020 11:00:59 -0400</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project-3/</guid>
+      <description>Looking at the defensive facet of the game is not an easy approach using metrics. Firstly, teams that have more the ball will have fewer defensive actions per game. Therefore, all defensive metrics must be adjusted by the possession of the team. Secondly, there are not many metrics at the current moment that describe the way teams defend.
+Nevertheless, it is known that the best way to adjust defensive actions by possession is by applying the effective time possession of each team.</description>
+    </item>
+    
+    <item>
+      <title>Superliga season 2019/20 squads distribution of time played by age</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project-2/</link>
+      <pubDate>Fri, 24 Jul 2020 11:00:59 -0400</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project-2/</guid>
+      <description>How playing time of players is distributed in Superliga Argentina squads. The teams are organized by their final position in the league. It also gives information about the average age of each team and how many points they were able to sum. The leagues average is 25.7 years old.
+Although the league of Argentina has an export profile, most teams can hold players in their prime age (25.7 yrs old average age).</description>
+    </item>
+    
+    <item>
+      <title>Leed&#39;s United journey back to Premier League</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project-1/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project-1/</guid>
+      <description>After 16 years Leed&amp;rsquo;s United returns to Premier League. Using data from FBref I was able to graph a simple line plot to show the long journey Leed&amp;rsquo;s had to take.
+  Link to Github Repository</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/contact/</guid>
+      <description>Follow me on these social media platforms.
+   Platform URL     Twitter: https://twitter.com/cammi_renzo   GitHub: https://github.com/rcammi   Linkedin: https://linkedin.com/in/renzo-cammi   Gmail: cammirenzo@gmail.com    </description>
+    </item>
+    
+  </channel>
+</rss>
