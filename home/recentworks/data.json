@@ -3,91 +3,91 @@
         "id": 12,
         "name": "La Copa America 2021 de Brasil en números",
         "image": "images/project12/formations.png",
-        "url": "cammirenzo_portfolio/post/project12",
+        "url": "/post/project12",
         "items": []
     },
     {
         "id": 11,
         "name": "Players Scouting Tool",
         "image": "images/project11/main-scout.png",
-        "url": "cammirenzo_portfolio/post/project11",
+        "url": "/post/project11",
         "items": []
     },
     {
         "id": 10,
         "name": "Percentile bar plot",
         "image": "images/project10/percentile.png",
-        "url": "cammirenzo_portfolio/post/project10",
+        "url": "/post/project10",
         "items": []
     },
     {
         "id": 9,
         "name": "Expected goals vs Expected goals against",
         "image": "images/project9/xG_xGA.jfif",
-        "url": "cammirenzo_portfolio/post/project9",
+        "url": "/post/project9",
         "items": []
     },
     {
         "id": 8,
         "name": "Ranking with treemaps",
         "image": "images/project8/treemaps.jfif",
-        "url": "cammirenzo_portfolio/post/project8",
+        "url": "/post/project8",
         "items": []
     },
     {
         "id": 7,
         "name": "Shotmaps",
         "image": "images/project7/heatmap.jfif",
-        "url": "cammirenzo_portfolio/post/project7",
+        "url": "/post/project7",
         "items": []
     },
     {
         "id": 6,
         "name": "Expected goals during a match",
         "image": "images/project6/line_time.png",
-        "url": "cammirenzo_portfolio/post/project6",
+        "url": "/post/project6",
         "items": []
     },
     {
         "id": 5,
         "name": "Lionel Messi team contribution",
         "image": "images/project5/leo.png",
-        "url": "cammirenzo_portfolio/post/project5",
+        "url": "/post/project5",
         "items": []
     },
     {
         "id": 4,
         "name": "Top 10 defensive players of Superliga in season 2019/20",
         "image": "images/project4/scatter.jfif",
-        "url": "cammirenzo_portfolio/post/project4",
+        "url": "/post/project4",
         "items": []
     },
     {
         "id": 3,
         "name": "Champions League squad directness in season 2019/20",
         "image": "images/project3/directness.png",
-        "url": "cammirenzo_portfolio/post/project3",
+        "url": "/post/project3",
         "items": []
     },
     {
         "id": 2,
         "name": "Champions League squad pressures in season 2019/20",
         "image": "images/project2/pres_3Z_v2.png",
-        "url": "cammirenzo_portfolio/post/project2",
+        "url": "/post/project2",
         "items": []
     },
     {
         "id": 1,
         "name": "Superliga season 2019/20 squads distribution of time played by age",
         "image": "images/project1/age_profile.png",
-        "url": "cammirenzo_portfolio/post/project1",
+        "url": "/post/project1",
         "items": []
     },
     {
         "id": 0,
         "name": "Leed's United journey back to Premier League",
         "image": "images/project0/leeds_timeline.png",
-        "url": "cammirenzo_portfolio/post/project0",
+        "url": "/post/project0",
         "items": []
     }
 ]
