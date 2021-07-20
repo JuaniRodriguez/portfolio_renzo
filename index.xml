@@ -6,7 +6,7 @@
     <description>Recent content on Renzo Cammi Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rcammi.github.io/cammirenzo_portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rcammi.github.io/cammirenzo_portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Download original template</title>
       <link>https://rcammi.github.io/cammirenzo_portfolio/home/downloads/download1/</link>
@@ -23,6 +23,16 @@
       
       <guid>https://rcammi.github.io/cammirenzo_portfolio/about/</guid>
       <description>Hi! My name is Renzo Cammi I was born in Argentina and currently living in Buenos Aires. I spent my childhood living in many countries of South America. I am ending my career in surveying engineering in the University of Buenos Aires (UBA). Self-taught coding in Python and applying it to Sports Analytics.</description>
+    </item>
+    
+    <item>
+      <title>Squad composition</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project13/</link>
+      <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project13/</guid>
+      <description>How&amp;rsquo;s the squad composition up to date? Is there a lack of depth in any position? What youth player can get more minutes the first team? Who&amp;rsquo;s contract expires in the next market?
+ Squad composition for all squads of the Argentina Liga Profesional.</description>
     </item>
     
     <item>
@@ -79,7 +89,7 @@ Sus números en la actual Copa América 2021 reflejan un equipo superior a sus r
       <pubDate>Sat, 12 Sep 2020 11:00:59 -0400</pubDate>
       
       <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project7/</guid>
-      <description>Shot maps are an interesting way to analyze strikers. Are they shooting from high value areas? With what foot are they shooting? Have the changed the coordinates from where they shoot as they aged?
+      <description>Shot maps are an interesting way to analyze strikers. Are they shooting from high value areas? With what foot are they shooting? Have they changed the coordinates from where they shoot as they aged?
    </description>
     </item>
     
