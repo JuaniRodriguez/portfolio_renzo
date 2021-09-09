@@ -209,8 +209,8 @@ Who&rsquo;s contract expires in the next market?</p>
 						</h1>
 					</header>
 					<div class="entry-content">
-						<p>Scouting Tool is an application that lets you search, find, and analyze football players within the Top 5 European Leagues. The application is built with the python library “Streamlit”. The open data is scraped from Statsbomb via FBref and Transfermrkt for the season 2017-18 to current. Based on the selected season the app loads and processes the data from the webpage. The numbers are adjusted per 90 minutes and for the moment defensive metrics are not adjusted by the possession of the squad. If you do not select a new season, the load function would not take place since the data is saved in a repository inside the application.</p>
-<p>The objective of the app is to display the data in an elegant and efficient way using tables and visualizations. The app is divided in three components:</p>
+						<p>Scouting Tool is a web application that lets you search, find, and analyze football players within the Top 5 European Leagues. The application is built with python library <a href="https://streamlit.io/">Streamlit</a>. The open data is scraped from <a href="https://fbref.com/en/">Statsbomb via FBref</a> and <a href="https://www.transfermarkt.com/">Transfermarkt</a> for seasons 2017-18 to 2020-21. Only field players with more than 900 minutes in each season were considered. Event values are adjusted per 90 minutes and for the moment defensive metrics are not adjusted by squad possession.</p>
+<p>The objective of the app is to filter and display football (soccer) event data in an elegant and efficient way using visualizations. The app is divided in four components:</p>
 <ul>
 <li>
 <p>Advanced search</p>
@@ -221,10 +221,18 @@ Who&rsquo;s contract expires in the next market?</p>
 <li>
 <p>Player Profile</p>
 </li>
+<li>
+<p>Scatter Plot</p>
+</li>
 </ul>
-<p>The advanced search component allows to filter a pool of players to create your own shortlist based on specific metrics and then export it. It is planned to incorporate a similarity model so you can filter players based in a specific player. Shortly an article will be written about this.</p>
-<p>The next component allows to compare players based on a template for a selected position. Each template contains the metrics that are considered essential for each position. If you do not want to compare against a player, you can do it by the average of all the players of each metric in a selected league. The final output is a radar plot and a table. The radar boundaries represent the maximum values of production by all the pool of players in each metric. This can be improved by using the top 5% of all statistical production by the whole pool of players or even better by position. Later, it will be added the option to choose a radar with percentiles.</p>
-<p>Finally, in the player profile component, a detailed report of a specific player would be displayed. It is not finished yet, but the idea is to incorporate heat maps such as shots maps.</p>
+<p><em>Advanced search</em></p>
+<p>This component allows you to create a shortlist from a pool of players. The pool can be filtered by personal information and event metrics. If you are curious to find similar players, you have the option to do it. The similarity model is built with PCA variable reduction and euclidean distance. It is a basic and simple model which might have it flaws but it does the work.</p>
+<p><em>Compare</em></p>
+<p>The next component allows to compare players based on a template for a selected position. Each template contains the events that are considered essential for each position. If you do not want to compare against a player, you can do it by the mean of all events of all players in a selected league, or a specific position. The final output is a radar plot and a table. The radar boundaries represent the maximum values of production by all the pool of players in each metric.</p>
+<p><em>Profile Player</em></p>
+<p>Player profile component shows a bar plot for a specific player. The viz displays percentiles ranks within player position for chosen league or TOP 5 European Leagues. It also incorporates the absolute value of each event. It is a neat way to see player performance in a season compared to the rest.</p>
+<p><em>Scatter Plot</em></p>
+<p>A simple plotly scatter plot. It is built to analyze the distribution between two variables and find outliers. You can filter the data with parameters and the plot is interactive. It enables you pan, zoom in and out, and square or lasso select. Another cool option is that you can display a hover if you put the mouse on top of each dot.</p>
 <p><a href="https://player-scout-tool.herokuapp.com/">Link to Players Scouting Tool</a></p>
 
 					</div>
