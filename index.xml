@@ -51,7 +51,7 @@ Sus números en la actual Copa América 2021 reflejan un equipo superior a sus r
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project11/</guid>
-      <description>Scouting Tool is an application that lets you search, find, and analyze football players within the Top 5 European Leagues. The application is built with the python library “Streamlit”. The open data is scraped from Statsbomb via FBref and Transfermrkt for the season 2017-18 to current. Based on the selected season the app loads and processes the data from the webpage. The numbers are adjusted per 90 minutes and for the moment defensive metrics are not adjusted by the possession of the squad.</description>
+      <description>Scouting Tool is a web application that lets you search, find, and analyze football players within the Top 5 European Leagues. The application is built with python library Streamlit. The open data is scraped from Statsbomb via FBref and Transfermarkt for seasons 2017-18 to 2020-21. Only field players with more than 900 minutes in each season were considered. Event values are adjusted per 90 minutes and for the moment defensive metrics are not adjusted by squad possession.</description>
     </item>
     
     <item>
