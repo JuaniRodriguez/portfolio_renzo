@@ -1,5 +1,33 @@
 [
     {
+        "id": 17,
+        "name": "xG by Game",
+        "image": "images/project17/xG_by_Game_Premier League.png",
+        "url": "/post/project17",
+        "items": []
+    },
+    {
+        "id": 16,
+        "name": "Spatial Analysis",
+        "image": "images/project16/analisis_espacial.png",
+        "url": "/post/project16",
+        "items": []
+    },
+    {
+        "id": 15,
+        "name": "Palermo Neighborhood",
+        "image": "images/project15/palermo.jpg",
+        "url": "/post/project15",
+        "items": []
+    },
+    {
+        "id": 14,
+        "name": "Neuquen Population Analysis",
+        "image": "images/project14/analisis_neuquen.jpg",
+        "url": "/post/project14",
+        "items": []
+    },
+    {
         "id": 13,
         "name": "Squad composition",
         "image": "images/project13/example.png",

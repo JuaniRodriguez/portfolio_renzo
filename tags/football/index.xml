@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Football on Renzo Cammi Portfolio</title>
+    <link>https://rcammi.github.io/cammirenzo_portfolio/tags/football/</link>
+    <description>Recent content in Football on Renzo Cammi Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://rcammi.github.io/cammirenzo_portfolio/tags/football/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>xG by Game</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project17/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project17/</guid>
+      <description>Expected goals by game for each team played in the league. You have the option to color the plot by xG difference or by away/home team.
+  Repo was made public so people can make their own vizualizations. You just have to follow the instructions!
+Link to Github Repository</description>
+    </item>
+    
+  </channel>
+</rss>

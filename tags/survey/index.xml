@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Survey on Renzo Cammi Portfolio</title>
+    <link>https://rcammi.github.io/cammirenzo_portfolio/tags/survey/</link>
+    <description>Recent content in Survey on Renzo Cammi Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rcammi.github.io/cammirenzo_portfolio/tags/survey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spatial Analysis</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project16/</link>
+      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project16/</guid>
+      <description>Scope of this work: The proposed practical work seeks as an objective to make use of several of the tools of spatial analysis and present what was analyzed in a cartographic output.
+ This work was part of the subject Geographic Information System II (70.42) of the University of Buenos Aires.</description>
+    </item>
+    
+    <item>
+      <title>Palermo Neighborhood</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project15/</link>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project15/</guid>
+      <description>Scope of this work: Seeks as an objective to form a Geographic Database to from a series of data provided and a cartographic output which will represent the information contained in the database.
+ This work was part of the subject Geographic Information System II (70.42) of the University of Buenos Aires.</description>
+    </item>
+    
+    <item>
+      <title>Neuquen Population Analysis</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project14/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project14/</guid>
+      <description>Scope of this work: Graphical output, incorporating multiple frames, table, graph.
+Data: Region included between the provinces of southern Argentina.
+In shape format: Gauss Kruger projection system, strip 3. Shapefiles do not have the projection system reference file. Create that file for each shape. We will work with the data corresponding to the province of Neuquén. The title of the output graph: Population analysis of the province of Neuquén.
+ This work was part of the subject Geographic Information System II (70.</description>
+    </item>
+    
+  </channel>
+</rss>
