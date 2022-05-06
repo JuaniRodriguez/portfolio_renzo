@@ -19,6 +19,25 @@ Link to Github Repository</description>
     </item>
     
     <item>
+      <title>SAR Interferometric Analysis</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project19/</link>
+      <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project19/</guid>
+      <description>1. Objetivo
+El objetivo es mapear huellas de zonas urbanas mediante la interferometría SAR. Se hará uso tanto de la amplitud como la fase de la señal de dos imágenes Sentinel 1A dando como resultado tres productos diferentes que se usaran para filtrar zonas edificadas. Los dos primeros productos son la amplitud calibrada para cada imagen y el último es el de la fase que surge de la coherencia interferométrica de las dos.</description>
+    </item>
+    
+    <item>
+      <title>SAR Image Preprocessing</title>
+      <link>https://rcammi.github.io/cammirenzo_portfolio/post/project18/</link>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rcammi.github.io/cammirenzo_portfolio/post/project18/</guid>
+      <description>El objetivo es llevar a cabo la descarga, exploración y preprocesamiento de dos imágenes SAR Sentinel-1, generando información geoespacial para visualizar y analizar, en un Sistema de Información Geográfica (SIG). Como caso de estudio se eligió la erupción volcánica de La Palma de 2021. Se inició a las 14:10 horas (UTC) del 19 de septiembre en el paraje de Cabeza de Vaca, cercano a la localidad de El Paraíso del municipio de El Paso, en la isla española de La Palma.</description>
+    </item>
+    
+    <item>
       <title>Spatial Analysis</title>
       <link>https://rcammi.github.io/cammirenzo_portfolio/post/project16/</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>

@@ -122,6 +122,154 @@
 					<header class="entry-header">
 						<div class="entry-meta">
                <span class="posted-on">
+                  <time class="entry-date published" datetime="July 7, 19190">December 19, 2021</time>
+               </span>
+						</div>
+						<h1 class="entry-title">
+						  <a href="https://rcammi.github.io/cammirenzo_portfolio/post/project19/" rel="bookmark">SAR Interferometric Analysis</a>
+						</h1>
+					</header>
+					<div class="entry-content">
+						<p><strong>1. Objetivo</strong></p>
+<p>El objetivo es mapear huellas de zonas urbanas mediante la interferometría SAR. Se hará uso tanto de la amplitud como la fase de la señal de dos imágenes Sentinel 1A
+dando como resultado tres productos diferentes que se usaran para filtrar zonas edificadas. Los dos primeros productos son la amplitud calibrada para cada imagen y el
+último es el de la fase que surge de la coherencia interferométrica de las dos. La coherencia de cada pixel se compone de distintos factores donde el factor geométrico y
+el temporal son los que más influyen sobre este. El primer factor puede ser eliminado pero el factor temporal depende estrictamente de las características de la zona de
+estudio. Esto permite encontrar cambios entre diferentes espacios temporales y en este caso especial como las zonas urbanas se componen de estructuras inamovibles que se
+mantienen en el tiempo la coherencia calculada correspondería ser alta.</p>
+<p><strong>2. Caso de estudio</strong></p>
+<p>El lugar de estudio es el rio Nilo antes de arribar al Cairo y Alejandría.</p>
+<p><figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project19/zona_de_estudio.jpg"/>
+</figure>
+
+Ilustración 1: Zona de estudio remarcada en rojo.</p>
+<p>El río Nilo tiene una longitud aproximada de 6853 km y es el más largo del mundo. Nace en el lago Victoria en Tanzania y atraviesa 10 países africanos hasta desembocar en el
+Mar Mediterráneo, formando el delta del Nilo sobre el cual se sitúan El Cairo y Alejandría. Rodeado por el desierto más grande del planeta, el Sahara, obligó históricamente a los Norteafricanos a fértiles viajes al Mediterráneo y al río Nilo. Funciono como fuente inagotable de recursos y como principal vía de comunicación hacia el Mediterráneo.
+De todo el trayecto del rio se eligió un tramo dentro de Egipto para buscar huellas de ciudades que se asentaron a las orillas del mismo (Ilustración 1).</p>
+<p><strong>3. Datos</strong></p>
+<p>Para llevar a cabo el trabajo se usaron dos imágenes SAR descargadas del hub de ESA-Copernicus con un nivel de procesamiento SLC. Ambas de la misión satelital Sentinel
+1A banda C con modo de adquisición TOPSAR - IW y una distancia temporal de dos meses sobre el mismo sector. El método IW adquiere datos con una franja de 250 km a
+una resolución espacial de 5 m x 20 m (SLC).</p>
+<p><figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project19/tabla1.png"/>
+</figure>
+
+Tabla 1.</p>
+<p><strong>4. Metodología</strong></p>
+<p>El procesamiento de las imágenes se llevó a cabo en el software SNAP siguiendo los siguientes pasos.</p>
+<ol>
+<li>Se realizó un split para la polarización VV de modo de obtener solo la rodaja de
+la imagen que cae sobre el rio.</li>
+<li>Incorporación de los archivos de orbita precisa que se descargaron
+automáticamente desde el software para mejorar las correcciones geométricas
+sobre el producto final.</li>
+<li>Eliminación del ruido térmico termal S1.</li>
+<li>Calibración con banda sigma 0 de la imagen para convertir el pixel en una
+cantidad física, en este caso la retrodispersión.</li>
+<li>Se unió zonas de demarcación de la imagen con un deburst.</li>
+<li>Aplicación de multilooking. Se pasa el pixel de un rectángulo a cuadrado (13.98
+x 13.98 m)</li>
+<li>Filtrado Speckle a cuesta de perder resolución.</li>
+<li>Corrección por terreno rango-doppler. Se corrige con un MDE de 90 m
+descargado automáticamente del software y se georreferencia en el sistema
+WGS84.</li>
+</ol>
+<p>El proceso fue similar para las dos imágenes descargadas obteniendo dos productos para las mismas coordenadas geodésicas en dos espacios temporales distintos.
+Asimismo, a los productos obtenidos del paso 2 (luego de la aplicación de orbita precisa) se los uso para calcular la interferometría de coherencia. Para comenzar se remuestrea
+(coincidir pixeles) de una imagen sobre la otra mediante una corregistración y se calcula la coherencia. Al resultado obtenido se le aplica el mismo procesamiento que se le aplico a los anteriores.</p>
+<p>De esta forma, se obtiene tres productos calibrados sobre la misma zona de estudio. Se los acopla sobre un mismo producto con stack para usarlos como tres bandas distintas.
+Con los productos de amplitud calibrados se calculó la media y la diferencia entre los mismos.</p>
+<p><figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project19/tabla2.png"/>
+</figure>
+
+Tabla 2.</p>
+<p>La representación del faso RGB se hace con la composición de la Tabla 2. Por último, se aplica una máscara de manera tal de destacar las zonas urbanas.</p>
+<p><em>if valores_coherencia &gt; 0.5 and valores_coherencia &lt; 0.7 and media_dB &gt; -8 and diferencia_dB &gt; -5 then 1 else 0.</em></p>
+<p>Básicamente, se filtra de manera condicional los valores de pixel de la imagen de coherencia entre 0.5 y 0.7 y los valores de media y diferencia mayores a -8 y -5
+respectivamente. Si se cumple, el valor de la máscara vale 1 caso contrario 0.</p>
+<p>Se trabajo con decibeles (dB) para convertir las bandas de escala lineal a logarítmicas. Permite manipular el histograma para mejorar la visualización de los productos.
+Finalmente, la salida gráfica se diseño en el software QGIS.</p>
+<p><strong>5. Resultados</strong></p>
+<p>El primer resutlado obtenido es el mapa de coherencia y su histograma:</p>
+<p><figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project19/coherence_map.png"/>
+</figure>
+
+Ilustaración 2: Mapa de coherencia.
+<figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project19/coherence_hist.png"/>
+</figure>
+
+Ilustaración 3: Histograma de coherencia.</p>
+<p>La coherencia describe la similitud de señal reflejada del radar entre dos imágenes, una es la master y la otra la “slave”. El rango de la coherencia va de 0 a 1, los valores más cercanos a uno (zona blanca) quiere decir que existe una coherencia entre las dos imágenes y en la zona oscura lo contrario. Se puede ver que en las zonas de vegetación
+alrededor del rio existe poca coherencia entre las dos. Sin embargo, dentro de estas si se puede observar sectores brillantes que dan un indicio a zonas edificadas y en las
+zonas de color blanco opaco el desierto que no varia con en el tiempo.</p>
+<p><figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project19/salida_bing.png"/>
+</figure>
+
+Ilustración 4: Imagen satelital Bing y producto obtenido en falso RGB en escala 1.500.000. Se destaca zona de vegetación alrededor del rio.</p>
+<p>La imagen en falso RGB proporciona una idea del uso del suelo. En rojo y naranja los pixeles son de baja retrodispersión y alta coherencia indicando zonas de agricultura o
+zonas de suelo desnudo, en este caso el desierto. En cambio, en color amarillo brillante resultan pixeles de alta retrodispersión y alta coherencia dando como resultado zonas
+edificadas. Además, se aprecia en azul oscuro cuerpos de agua y en verde extensos campos de vegetación.</p>
+<p>Finlamente el producto final:</p>
+<p><figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project19/huellas_urbanas.png"/>
+</figure>
+
+Ilustración 5: Producto final con un mapa base de OM. Se resalta huellas urbanas en color verde.</p>
+<p>Aplicando el filtro explicado anteriormente, se arriba al producto final con las huellas urbanas en representadas en color verde para que se logren visualizar en la imagen.</p>
+<p><strong>6. Discusión</strong></p>
+<p>Para llegar al objetivo del trabajo se utilizó un filtro con los tres productos obtenidos. El problema es que se tuvo que definir el filtro final de manera manual, a prueba y error, observando los valores de decibeles (dB) de los pixeles hasta llegar al producto esperado. En una primera instancia se obtuvo un producto totalmente diferente, es decir,
+se destacaban zonas no edificadas en conjunto con edificadas. Para esto se propone buscar alguna técnica especial que directamente logre describir no de manera manual
+sino con un contexto estadístico. Asimismo, para mejorar el análisis se puede agregar otro mapa de coherencia a partir de otras dos imágenes en otro tiempo para comparar
+cambios entre ambos.</p>
+<p><strong>7. Conclusiones</strong></p>
+<p>El desarrollo del trabajo logro describir el objetivo propuesto. Se pudieron observar los beneficios del uso de imágenes satelitales SAR para la distinción de objetos en el
+terreno. Se logró diferenciar entre zonas desérticas y campos extensos de vegetación. Los últimos, se encontraban alrededor de cuerpos de aguas como era de esperar. Como
+consecuencia, la mayoría de las ciudades edificadas que se alcanzaron a filtrar están el rededor de estos. Por último, se practicó el procesamiento de imágenes SAR, así como la aplicación de una de las técnicas de la interferometría SAR.</p>
+<p><strong>8. Referencias</strong></p>
+<p>[1] National Geographic (2012). “El Nilo, río sagrado de Egipto” [Link]
+<a href="https://historia.nationalgeographic.com.es/a/nilo-rio-sagrado-egipto_6820">https://historia.nationalgeographic.com.es/a/nilo-rio-sagrado-egipto_6820</a></p>
+<p>[2] The Alaska Satellite Facility. “How to Create an RGB Composite from Multi-Temporal Sentinel-1 Data” [Link] <a href="https://asf.alaska.edu/how-to/data-recipes/create-an-rgb-composite-from-multi-temporal-sentinel-1-data/">https://asf.alaska.edu/how-to/data-recipes/create-an-rgb-composite-from-multi-temporal-sentinel-1-data/</a></p>
+<p>[3] Ruiz-Ramos, Javier – Marino, Armando – Boardman, Carl (2018). “Using Sentinel 1-SAR for Monitoring Long Term Variation in Burnt Forest Areas” [Link]
+<a href="https://www.researchgate.net/publication/328886833_Using_Sentinel_1-SAR_for_Monitoring_Long_Term_Variation_in_Burnt_Forest_Areas">https://www.researchgate.net/publication/328886833_Using_Sentinel_1-SAR_for_Monitoring_Long_Term_Variation_in_Burnt_Forest_Areas</a></p>
+<p><em>Este trabajo fue parte del curso de complementación &ldquo;Radar de Apertura Sintética: fundamentos y ténicas interferométricas&rdquo; de la Universidad de Buenos Aires.</em></p>
+
+					</div>
+				</article>
+        
+				<article class="post">
+					<header class="entry-header">
+						<div class="entry-meta">
+               <span class="posted-on">
+                  <time class="entry-date published" datetime="July 7, 11110">December 11, 2021</time>
+               </span>
+						</div>
+						<h1 class="entry-title">
+						  <a href="https://rcammi.github.io/cammirenzo_portfolio/post/project18/" rel="bookmark">SAR Image Preprocessing</a>
+						</h1>
+					</header>
+					<div class="entry-content">
+						<p>El objetivo es llevar a cabo la descarga, exploración y preprocesamiento de dos imágenes SAR Sentinel-1, generando información geoespacial para visualizar y
+analizar, en un Sistema de Información Geográfica (SIG). Como caso de estudio se eligió la erupción volcánica de La Palma de 2021. Se inició a las 14:10 horas (UTC) del 19 de septiembre en el paraje de Cabeza de Vaca, cercano a la localidad de El Paraíso del municipio de El Paso, en la isla española de La Palma. El mismo continua en actividad hasta entonces.</p>
+<p>Se seleccionaron tres imágenes SAR del satélite Sentinel 1B con modo de adquisición TOPSAR - IW con un nivel de procesamiento GRD. La imagen 1 es un año
+antes del inicio de la erupción (2020/09/21) y la imagen 2 (2021/09/20) y 3 (2021/10/02) están separadas por 12 días. Las imágenes fueron descargadas de Copernicus Open Access Hub. La primera imagen es de pasada ascendente y el resto son descedente.</p>
+<p><figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project18/salida.png"/>
+</figure>
+
+Ilustración 1: Productos posprocesamiento en SNAP. Zona de estudio: latitud 28°37 y longitud 17°52.</p>
+<p>Se uso la polarización VV para analizar el efecto de la lava sobre la vegetación. Además, el falso RGB se compone por la polarización VV en rojo, HV en verde y la resta de
+ambos para el azul. Se convirtió a decibeles para poder manipular el histograma y a su vez mejorar la visualización de los productos finales. Se debe tener en cuenta que la
+imagen 1 es ascendente y el resto son tomadas de manera descendente. Esto puede provocar algunas diferencias entre la comparación de las imágenes.</p>
+<p>De la ilustración 1 en un principio se observa baja retrodispersión (baja intensidad dB) para las tres imágenes en la zona de la Montaña Quemada. Ahí se encuentra la colada
+lávica del Volcán Tacande que da a un sector de poca vegetación. En cambio, donde la retrodispersión es alta (amarillo brillante en RGB) se encuentran zonas
+urbanas. Asimismo, tanto para los productos de la fecha 2021/09/21 y 2021/09/20 no se observa algún cambio alguno en el entorno del volcán Tajoigate pero si se aprecia unos
+días después (2021/10/02) donde el color rojo en el falso RGB cobra mayor intensidad.</p>
+<p><em>Este trabajo fue parte del curso de complementación &ldquo;Radar de Apertura Sintética: fundamentos y ténicas interferométricas&rdquo; de la Universidad de Buenos Aires.</em></p>
+
+					</div>
+				</article>
+        
+				<article class="post">
+					<header class="entry-header">
+						<div class="entry-meta">
+               <span class="posted-on">
                   <time class="entry-date published" datetime="July 7, 8080">December 8, 2021</time>
                </span>
 						</div>
@@ -134,7 +282,7 @@
 <figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project16/analisis_espacial.jpg"/>
 </figure>
 
-<p>This work was part of the subject Geographic Information System II (70.42) of the University of Buenos Aires.</p>
+<p><em>This work was part of the subject Geographic Information System II (70.42) of the University of Buenos Aires.</em></p>
 
 					</div>
 				</article>
@@ -155,7 +303,7 @@
 <figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project15/palermo.jpg"/>
 </figure>
 
-<p>This work was part of the subject Geographic Information System II (70.42) of the University of Buenos Aires.</p>
+<p><em>This work was part of the subject Geographic Information System II (70.42) of the University of Buenos Aires.</em></p>
 
 					</div>
 				</article>
@@ -178,7 +326,7 @@
 <figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project14/analisis_neuquen.jpg"/>
 </figure>
 
-<p>This work was part of the subject Geographic Information System II (70.42) of the University of Buenos Aires.</p>
+<p><em>This work was part of the subject Geographic Information System II (70.42) of the University of Buenos Aires.</em></p>
 
 					</div>
 				</article>
@@ -342,45 +490,6 @@ Who&rsquo;s contract expires in the next market?</p>
 					<div class="entry-content">
 						<p>How good is a player compared to players that play in his same position?</p>
 <figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project10/percentile.png"/>
-</figure>
-
-
-					</div>
-				</article>
-        
-				<article class="post">
-					<header class="entry-header">
-						<div class="entry-meta">
-               <span class="posted-on">
-                  <time class="entry-date published" datetime="July 7, 25250">October 25, 2020</time>
-               </span>
-						</div>
-						<h1 class="entry-title">
-						  <a href="https://rcammi.github.io/cammirenzo_portfolio/post/project9/" rel="bookmark">Expected goals vs Expected goals against</a>
-						</h1>
-					</header>
-					<div class="entry-content">
-						<p>A great way to see squad performance is by using xG versus xGA.</p>
-<figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project9/xG_xGA.jfif"/>
-</figure>
-
-
-					</div>
-				</article>
-        
-				<article class="post">
-					<header class="entry-header">
-						<div class="entry-meta">
-               <span class="posted-on">
-                  <time class="entry-date published" datetime="July 7, 20200">September 20, 2020</time>
-               </span>
-						</div>
-						<h1 class="entry-title">
-						  <a href="https://rcammi.github.io/cammirenzo_portfolio/post/project8/" rel="bookmark">Ranking with treemaps</a>
-						</h1>
-					</header>
-					<div class="entry-content">
-						<figure><img src="https://rcammi.github.io/cammirenzo_portfolio/images/project8/treemaps.jfif"/>
 </figure>
 
 

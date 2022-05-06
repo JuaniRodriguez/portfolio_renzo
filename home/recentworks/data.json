@@ -7,6 +7,20 @@
         "items": []
     },
     {
+        "id": 19,
+        "name": "Análisis Interferométrico SAR",
+        "image": "images/project19/huellas_urbanas.png",
+        "url": "/post/project19",
+        "items": []
+    },
+    {
+        "id": 18,
+        "name": "Preprocesamiento de Imágenes SAR",
+        "image": "images/project18/salida.png",
+        "url": "/post/project18",
+        "items": []
+    },
+    {
         "id": 16,
         "name": "Spatial Analysis",
         "image": "images/project16/analisis_espacial.png",
